@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-
+require('dotenv').config();
 // Define a mongoDB URL
 
-const mongoURL="mongodb://127.0.0.1:27017/hotel?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.15" // url of your databse
-
+//const mongoURL="mongodb://127.0.0.1:27017/hotel?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.15" // url of your databse
+const mongoURL= process.env.DB_URL;
 // set up MongoDb connection
 
 mongoose.connect(mongoURL,{

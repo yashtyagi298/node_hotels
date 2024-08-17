@@ -81,9 +81,6 @@ router.put('/:objectId',async(req,res)=>{
              console.log(err);
              res.status(500).json({msg:'error occur'});
     }
-
-
-
 })
 
 // delete 

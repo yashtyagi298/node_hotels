@@ -8,9 +8,8 @@ const menuSchema  = new mongoose.Schema({
     },
     quantity:{
       type:String,
-      enum:["full","half"],
       required:true,
-      unique:true
+      enum:["full","half"]
     },
     price:{
          type:Number,
